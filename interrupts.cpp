@@ -29,7 +29,7 @@ int main(int argc, char** argv) {
         auto [activity, duration_intr] = parse_trace(trace);
 
         /******************ADD YOUR SIMULATION CODE HERE*************************/
-
+        std::cout << 123 ;
 
 
         /************************************************************************/
