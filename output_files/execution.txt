@@ -1,0 +1,29 @@
+0, 50, CPU
+50, 1, switch to kernel mode
+51, 10, context saved
+61, 1, find vector 7 in memory position 0x000E
+62, 1, load address 152 into the PC
+63, 40,  ISR Body
+103, 1,  IRET 
+104, 0,  Wait for end IO
+104, 1, switch to kernel mode
+105, 10, context saved
+115, 1, find vector 7 in memory position 0x000E
+116, 1, load address 152 into the PC
+117, 40,  ISR Body
+157, 1,  IRET 
+158, 100, CPU
+258, 1, switch to kernel mode
+259, 10, context saved
+269, 1, find vector 12 in memory position 0x0018
+270, 1, load address 145 into the PC
+271, 40,  ISR Body
+311, 1,  IRET 
+312, 0,  Wait for end IO
+312, 1, switch to kernel mode
+313, 10, context saved
+323, 1, find vector 12 in memory position 0x0018
+324, 1, load address 145 into the PC
+325, 40,  ISR Body
+365, 1,  IRET 
+366, 20, CPU
