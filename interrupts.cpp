@@ -6,6 +6,11 @@
  */
 
 #include<interrupts.hpp>
+#include <string>
+#include <iostream>
+#define CONTEXT_TIME 10
+#define ISR_TIME 40
+#define IRET_TIME 1
 
 int main(int argc, char** argv) {
 
@@ -20,17 +25,40 @@ int main(int argc, char** argv) {
 
     /******************ADD YOUR VARIABLES HERE*************************/
 
-
+    int time = 0;
 
     /******************************************************************/
+
 
     //parse each line of the input trace file
     while(std::getline(input_file, trace)) {
         auto [activity, duration_intr] = parse_trace(trace);
-
         /******************ADD YOUR SIMULATION CODE HERE*************************/
-        std::cout << 123 ;
+        
+        if(activity == "SYSCALL" || activity == "END_IO")
+        {
+            auto pair = intr_boilerplate(time, duration_intr,  CONTEXT_TIME, vectors);
+            auto[execution_return, time_return ] = pair;
+            execution += execution_return;
+            time = time_return;
+            execution += std::to_string(time) + ", "  + std::to_string(ISR_TIME)  + ",  ISR Body\n"; 
+            time += ISR_TIME;
+            execution += std::to_string(time) + ", "  + std::to_string(IRET_TIME)  + ",  IRET \n"; 
+            time += IRET_TIME;
 
+            //wait for device to be done???????
+            if (activity == "SYSCALL")
+            {
+                execution += std::to_string(time) + ", "  + std::to_string(delays[duration_intr - 1])  + ",  Wait for end IO\n"; 
+                time += delays[duration_intr - 1];
+            }
+            
+            
+        }
+        else {
+            execution += std::to_string(time) + ", "  + std::to_string(duration_intr)  + ", " + activity + "\n"; 
+            time += duration_intr;
+        }
 
         /************************************************************************/
 
