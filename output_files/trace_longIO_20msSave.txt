@@ -1,0 +1,91 @@
+0, 75, CPU burst 
+75, 1, switch to kernel mode
+76, 20, context saved
+96, 1, find vector 9 in memory position 0x0012
+97, 1, load address 0X036C into the PC
+98, 333, call device driver
+431, 333, transfer data
+764, 334, check for errors
+1098, 1,  IRET 
+1099, 84, CPU burst 
+1183, 1, switch to kernel mode
+1184, 20, context saved
+1204, 1, find vector 9 in memory position 0x0012
+1205, 1, load address 0X036C into the PC
+1206, 333, store information in memory
+1539, 333, check for errors
+1872, 334, finish END_IO process
+2206, 1,  IRET 
+2207, 22, CPU burst 
+2229, 1, switch to kernel mode
+2230, 20, context saved
+2250, 1, find vector 9 in memory position 0x0012
+2251, 1, load address 0X036C into the PC
+2252, 333, call device driver
+2585, 333, transfer data
+2918, 334, check for errors
+3252, 1,  IRET 
+3253, 80, CPU burst 
+3333, 1, switch to kernel mode
+3334, 20, context saved
+3354, 1, find vector 9 in memory position 0x0012
+3355, 1, load address 0X036C into the PC
+3356, 333, store information in memory
+3689, 333, check for errors
+4022, 334, finish END_IO process
+4356, 1,  IRET 
+4357, 79, CPU burst 
+4436, 1, switch to kernel mode
+4437, 20, context saved
+4457, 1, find vector 9 in memory position 0x0012
+4458, 1, load address 0X036C into the PC
+4459, 333, call device driver
+4792, 333, transfer data
+5125, 334, check for errors
+5459, 1,  IRET 
+5460, 68, CPU burst 
+5528, 1, switch to kernel mode
+5529, 20, context saved
+5549, 1, find vector 9 in memory position 0x0012
+5550, 1, load address 0X036C into the PC
+5551, 333, store information in memory
+5884, 333, check for errors
+6217, 334, finish END_IO process
+6551, 1,  IRET 
+6552, 71, CPU burst 
+6623, 1, switch to kernel mode
+6624, 20, context saved
+6644, 1, find vector 9 in memory position 0x0012
+6645, 1, load address 0X036C into the PC
+6646, 333, call device driver
+6979, 333, transfer data
+7312, 334, check for errors
+7646, 1,  IRET 
+7647, 97, CPU burst 
+7744, 1, switch to kernel mode
+7745, 20, context saved
+7765, 1, find vector 9 in memory position 0x0012
+7766, 1, load address 0X036C into the PC
+7767, 333, store information in memory
+8100, 333, check for errors
+8433, 334, finish END_IO process
+8767, 1,  IRET 
+8768, 84, CPU burst 
+8852, 1, switch to kernel mode
+8853, 20, context saved
+8873, 1, find vector 9 in memory position 0x0012
+8874, 1, load address 0X036C into the PC
+8875, 333, call device driver
+9208, 333, transfer data
+9541, 334, check for errors
+9875, 1,  IRET 
+9876, 38, CPU burst 
+9914, 1, switch to kernel mode
+9915, 20, context saved
+9935, 1, find vector 9 in memory position 0x0012
+9936, 1, load address 0X036C into the PC
+9937, 333, store information in memory
+10270, 333, check for errors
+10603, 334, finish END_IO process
+10937, 1,  IRET 
+10938, 90, CPU burst 

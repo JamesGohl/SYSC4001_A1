@@ -1,0 +1,91 @@
+0, 75, CPU burst 
+75, 1, switch to kernel mode
+76, 30, context saved
+106, 1, find vector 16 in memory position 0x0020
+107, 1, load address 0X02DF into the PC
+108, 22, call device driver
+130, 22, transfer data
+152, 24, check for errors
+176, 1,  IRET 
+177, 84, CPU burst 
+261, 1, switch to kernel mode
+262, 30, context saved
+292, 1, find vector 16 in memory position 0x0020
+293, 1, load address 0X02DF into the PC
+294, 22, store information in memory
+316, 22, check for errors
+338, 24, finish END_IO process
+362, 1,  IRET 
+363, 22, CPU burst 
+385, 1, switch to kernel mode
+386, 30, context saved
+416, 1, find vector 16 in memory position 0x0020
+417, 1, load address 0X02DF into the PC
+418, 22, call device driver
+440, 22, transfer data
+462, 24, check for errors
+486, 1,  IRET 
+487, 80, CPU burst 
+567, 1, switch to kernel mode
+568, 30, context saved
+598, 1, find vector 16 in memory position 0x0020
+599, 1, load address 0X02DF into the PC
+600, 22, store information in memory
+622, 22, check for errors
+644, 24, finish END_IO process
+668, 1,  IRET 
+669, 79, CPU burst 
+748, 1, switch to kernel mode
+749, 30, context saved
+779, 1, find vector 16 in memory position 0x0020
+780, 1, load address 0X02DF into the PC
+781, 22, call device driver
+803, 22, transfer data
+825, 24, check for errors
+849, 1,  IRET 
+850, 68, CPU burst 
+918, 1, switch to kernel mode
+919, 30, context saved
+949, 1, find vector 16 in memory position 0x0020
+950, 1, load address 0X02DF into the PC
+951, 22, store information in memory
+973, 22, check for errors
+995, 24, finish END_IO process
+1019, 1,  IRET 
+1020, 71, CPU burst 
+1091, 1, switch to kernel mode
+1092, 30, context saved
+1122, 1, find vector 16 in memory position 0x0020
+1123, 1, load address 0X02DF into the PC
+1124, 22, call device driver
+1146, 22, transfer data
+1168, 24, check for errors
+1192, 1,  IRET 
+1193, 97, CPU burst 
+1290, 1, switch to kernel mode
+1291, 30, context saved
+1321, 1, find vector 16 in memory position 0x0020
+1322, 1, load address 0X02DF into the PC
+1323, 22, store information in memory
+1345, 22, check for errors
+1367, 24, finish END_IO process
+1391, 1,  IRET 
+1392, 84, CPU burst 
+1476, 1, switch to kernel mode
+1477, 30, context saved
+1507, 1, find vector 16 in memory position 0x0020
+1508, 1, load address 0X02DF into the PC
+1509, 22, call device driver
+1531, 22, transfer data
+1553, 24, check for errors
+1577, 1,  IRET 
+1578, 38, CPU burst 
+1616, 1, switch to kernel mode
+1617, 30, context saved
+1647, 1, find vector 16 in memory position 0x0020
+1648, 1, load address 0X02DF into the PC
+1649, 22, store information in memory
+1671, 22, check for errors
+1693, 24, finish END_IO process
+1717, 1,  IRET 
+1718, 90, CPU burst 

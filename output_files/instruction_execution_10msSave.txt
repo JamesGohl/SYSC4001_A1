@@ -1,0 +1,35 @@
+0, 50, CPU burst 
+50, 1, switch to kernel mode
+51, 10, context saved
+61, 1, find vector 7 in memory position 0x000E
+62, 1, load address 0X00BD into the PC
+63, 88, call device driver
+151, 88, transfer data
+239, 89, check for errors
+328, 1,  IRET 
+329, 1, switch to kernel mode
+330, 10, context saved
+340, 1, find vector 7 in memory position 0x000E
+341, 1, load address 0X00BD into the PC
+342, 88, store information in memory
+430, 88, check for errors
+518, 89, finish END_IO process
+607, 1,  IRET 
+608, 100, CPU burst 
+708, 1, switch to kernel mode
+709, 10, context saved
+719, 1, find vector 12 in memory position 0x0018
+720, 1, load address 0X03B9 into the PC
+721, 174, call device driver
+895, 174, transfer data
+1069, 175, check for errors
+1244, 1,  IRET 
+1245, 1, switch to kernel mode
+1246, 10, context saved
+1256, 1, find vector 12 in memory position 0x0018
+1257, 1, load address 0X03B9 into the PC
+1258, 174, store information in memory
+1432, 174, check for errors
+1606, 175, finish END_IO process
+1781, 1,  IRET 
+1782, 20, CPU burst 
