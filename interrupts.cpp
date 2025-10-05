@@ -94,9 +94,7 @@ int main(int argc, char** argv) {
             execution += std::to_string(time) + ", "  + std::to_string(duration_intr)  + ", CPU burst \n"; 
             time += duration_intr;
         }
-
         /************************************************************************/
-
     }
 
     input_file.close();
